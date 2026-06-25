@@ -1,10 +1,12 @@
+import sinonLogo from '../assets/viber_image_2026-05-05_16-39-26-930.png';
+
 export default function Sidebar() {
   return (
-    <aside className="w-56 bg-red-950 p-5 flex flex-col justify-between min-h-screen">
+    <aside className="w-56 bg-[linear-gradient(180deg,#8a0f12,#560a0c)] p-5 flex flex-col justify-between min-h-screen">
       <div>
         <div className="text-center mb-8">
           <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3">
-            <div className="text-2xl">🔥</div>
+            <img className="mx-auto block h-16 w-16 rounded-full object-cover" src={sinonLogo} alt="AI SUNOG Logo" />
           </div>
           <h1 className="text-lg font-bold">AI SUNOG</h1>
           <p className="text-xs text-red-200">FIRE INTELLIGENCE</p>

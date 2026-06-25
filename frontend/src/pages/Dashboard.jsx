@@ -14,7 +14,7 @@ export default function Dashboard() {
         <div className="bg-zinc-900 p-6 border-b border-zinc-800">
           <div className="flex items-center justify-between">
             <div className="flex gap-8">
-              <KPIcard title="Active" value="3" color="text-red-500" />
+              <KPIcard title="Active" value="3" color="text-[#ffa733]" />
               <KPIcard title="Responding" value="2" color="text-orange-500" />
               <KPIcard title="Resolved" value="4" color="text-lime-400" />
               <KPIcard title="Total Today" value="3" color="text-cyan-400" />
