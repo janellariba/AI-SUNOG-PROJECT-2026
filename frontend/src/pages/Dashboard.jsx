@@ -11,21 +11,21 @@ export default function Dashboard() {
 
       <main className="flex-1">
         {/* Top KPI Bar */}
-        <div className="bg-zinc-900 p-6 border-b border-zinc-800">
           <div className="flex items-center justify-between">
-            <div className="flex gap-8">
-              <KPIcard title="Active" value="3" color="text-[#ffa733]" />
+            <div className="flex gap-4 p-6">
+              <KPIcard title="Active" value="3" color="text-red-500" />
               <KPIcard title="Responding" value="2" color="text-orange-500" />
               <KPIcard title="Resolved" value="4" color="text-lime-400" />
               <KPIcard title="Total Today" value="3" color="text-cyan-400" />
               <KPIcard title="Avg. Response Time" value="5m 13s" color="text-white" />
             </div>
-            <div className="px-4 py-2 bg-red-600 rounded text-sm font-bold flex items-center gap-2">
+            <div className="px-4 py-2 bg-red-600 rounded-full text-sm font-bold flex items-center gap-2">
               <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
               LIVE
             </div>
           </div>
-        </div>
+
+
 
         {/* Main Content */}
         <div className="p-6 flex gap-6">
