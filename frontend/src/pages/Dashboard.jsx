@@ -32,8 +32,8 @@ export default function Dashboard() {
           <div className="flex-1 flex flex-col gap-6">
             <MapPanel />
             
-            <div className="grid grid-cols-2 gap-6">
-              <ChartPanel title="Incident by Barangay" type="line" />
+            <div className="charts-row">
+              <ChartPanel title="Incident by Barangay" type="line"/>
               <ChartPanel title="Fire Type Breakdown" type="pie" />
             </div>
           </div>

@@ -17,16 +17,16 @@ export default function Sidebar() {
           <h3 className="text-xs font-bold text-red-200 mb-3 uppercase">Main</h3>
           <nav className="space-y-2">
             <button className="block w-full text-left px-4 py-2 rounded bg-white/15 text-white hover:bg-white/20">
-              📊 Dashboard
+               Dashboard
             </button>
             <button className="block w-full text-left px-4 py-2 rounded text-red-100 hover:bg-white/10">
-              📈 Reports
+               Reports
             </button>
             <button className="block w-full text-left px-4 py-2 rounded text-red-100 hover:bg-white/10">
-              📉 Analytics
+               Analytics
             </button>
             <button className="block w-full text-left px-4 py-2 rounded text-red-100 hover:bg-white/10">
-              🌡️ Thermal Feeds
+               Thermal Feeds
             </button>
           </nav>
         </div>
@@ -35,13 +35,13 @@ export default function Sidebar() {
           <h3 className="text-xs font-bold text-red-200 mb-3 uppercase">Operations</h3>
           <nav className="space-y-2">
             <button className="block w-full text-left px-4 py-2 rounded text-red-100 hover:bg-white/10">
-              🚨 Alerts
+               Alerts
             </button>
             <button className="block w-full text-left px-4 py-2 rounded text-red-100 hover:bg-white/10">
-              👥 Responders
+               Responders
             </button>
             <button className="block w-full text-left px-4 py-2 rounded text-red-100 hover:bg-white/10">
-              📍 Stations
+               Stations
             </button>
           </nav>
         </div>
