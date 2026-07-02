@@ -1,8 +1,8 @@
 import Sidebar from "../components/Sidebar";
-import KPIcard from "../components/KPIcard";
-import MapPanel from "../components/MapPanel";
-import ChartPanel from "../components/ChartPanel";
-import RightPanel from "../components/RightPanel";
+import KPIcard from "../components/Dashboard/KPIcard";
+import MapPanel from "../components/Dashboard/MapPanel";
+import ChartPanel from "../components/Dashboard/ChartPanel";
+import RightPanel from "../components/Dashboard/RightPanel";
 
 export default function Dashboard() {
   return (

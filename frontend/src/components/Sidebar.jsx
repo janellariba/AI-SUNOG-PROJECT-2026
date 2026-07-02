@@ -65,11 +65,11 @@ export default function Sidebar() {
                 }`
               }
             >
-              <img src={thermLogo} alt="logo" className="inline-block h-5 w-5 mr-3 rounded-full object-cover align-middle" />
+              <img src={thermLogo} alt="logo" className="inline-block h-5 w-5 mr-3 rounded object-cover align-middle" />
               <span className="align-middle">Thermal Feeds</span>
             </NavLink>
            </nav>
-        </div>
+        </div> 
 
         <div>
           <h3 className="text-xs font-bold text-red-200 mb-3 uppercase">Operations</h3>
