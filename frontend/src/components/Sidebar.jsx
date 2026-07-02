@@ -1,4 +1,9 @@
+import { NavLink } from "react-router-dom";
 import sinonLogo from '../assets/viber_image_2026-05-05_16-39-26-930.png';
+import dashLogo from '../assets/icons8-dashboard.png';
+import reportLogo from '../assets/icons8-report.png';
+import analyLogo from '../assets/icons8-analytics.png';
+import thermLogo from '../assets/icons8-camera-50.png';
 
 export default function Sidebar() {
   return (
@@ -15,20 +20,55 @@ export default function Sidebar() {
 
         <div className="mb-8">
           <h3 className="text-xs font-bold text-red-200 mb-3 uppercase">Main</h3>
-          <nav className="space-y-2">
-            <button className="block w-full text-left px-4 py-2 rounded bg-white/15 text-white hover:bg-white/20">
-               Dashboard
-            </button>
-            <button className="block w-full text-left px-4 py-2 rounded text-red-100 hover:bg-white/10">
-               Reports
-            </button>
-            <button className="block w-full text-left px-4 py-2 rounded text-red-100 hover:bg-white/10">
-               Analytics
-            </button>
-            <button className="block w-full text-left px-4 py-2 rounded text-red-100 hover:bg-white/10">
-               Thermal Feeds
-            </button>
-          </nav>
+           <nav className="space-y-2">
+            <NavLink
+              to="/"
+              end
+              className={({ isActive }) =>
+                `block w-full text-left px-4 py-2 rounded ${
+                  isActive ? 'bg-white/15 text-white hover:bg-white/20' : 'text-red-100 hover:bg-white/10'
+                }`
+              }
+            >
+              <img src={dashLogo} alt="logo" className="inline-block h-5 w-5 mr-3 rounded-full object-cover align-middle" />
+              <span className="align-middle">Dashboard</span>
+            </NavLink>
+            <NavLink
+              to="/Reports"
+              end
+              className={({ isActive }) =>
+                `block w-full text-left px-4 py-2 rounded ${
+                  isActive ? 'bg-white/15 text-white hover:bg-white/20' : 'text-red-100 hover:bg-white/10'
+                }`
+              }
+            >
+              <img src={reportLogo} alt="logo" className="inline-block h-5 w-5 mr-3 rounded-full object-cover align-middle" />
+              <span className="align-middle">Reports</span>
+            </NavLink>
+            <NavLink
+              to="/Analytics"
+              end
+              className={({ isActive }) =>
+                `block w-full text-left px-4 py-2 rounded ${
+                  isActive ? 'bg-white/15 text-white hover:bg-white/20' : 'text-red-100 hover:bg-white/10'
+                }`
+              }
+            >
+              <img src={analyLogo} alt="logo" className="inline-block h-5 w-5 mr-3 rounded-full object-cover align-middle" />
+              <span className="align-middle">Analytics</span>
+            </NavLink>
+            <NavLink
+              to="/thermal-feeds"
+              className={({ isActive }) =>
+                `block w-full text-left px-4 py-2 rounded ${
+                  isActive ? 'bg-white/15 text-white hover:bg-white/20' : 'text-red-100 hover:bg-white/10'
+                }`
+              }
+            >
+              <img src={thermLogo} alt="logo" className="inline-block h-5 w-5 mr-3 rounded-full object-cover align-middle" />
+              <span className="align-middle">Thermal Feeds</span>
+            </NavLink>
+           </nav>
         </div>
 
         <div>

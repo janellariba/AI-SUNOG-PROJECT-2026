@@ -79,7 +79,7 @@ export default function RightPanel() {
               key={idx}
               className={`p-3 rounded text-center border-2 ${
                 camera.status === "ONLINE"
-                  ? "border-red-600 bg-red-600/10"
+                  ? "animate-pulse border-red-600 bg-red-600/10"
                   : "border-zinc-700 bg-zinc-800/50"
               }`}
             >
